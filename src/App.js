@@ -13,7 +13,13 @@ function App() {
       goblinFormHP, which is how we track the user input for the current HP of the goblin in the form
       goblinFormColor, which is how we track the user input for the current color of the goblin in the form
 */
-  const [allGoblins, setAllGoblins] = useState(['']);
+  const [allGoblins, setAllGoblins] = useState([
+    {
+      goblinFormName: 'Billy',
+      goblinFormHP: 10,
+      goblinFormColor: 'blue'
+    }
+  ]);
   const [goblinFormName, setGoblinFormName] = useState('');
   const [goblinFormColor, setGoblinFormColor] = useState('');
   const [goblinFormHP, setGoblinFormHP] = useState('');
