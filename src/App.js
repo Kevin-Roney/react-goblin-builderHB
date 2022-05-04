@@ -41,12 +41,13 @@ function App() {
     setGoblinFormColor('');
   }
 
-  function handleDeleteGoblin(name) {
+  function handleDeleteGoblin(goblinFormName) {
     // find the index of the goblin in allGoblins with this name
-
+    const indexToRemove = allGoblins.findIndex(goblin => goblin.goblinFormName === goblinFormName);
     // use splice to delete the goblin object at this index
-
+    allGoblins.splice(indexToRemove, 1);
     // update the allGoblins array immutably to this new, smaller array
+    setAllGoblins([...allGoblins]);
   }
 
   function handleFilterGoblins(search) {
