@@ -8,9 +8,9 @@ export default function GoblinList({ goblins, handleDeleteGoblin }) {
       {
         goblins.map((goblin, i) => 
           <Goblin 
-            key={`${goblin.goblinFormHp}-${i}`}
+            key={`${goblin.goblinFormName}-${i}`}
             goblinFormName={goblin.goblinFormName}
-            goblinFormHp={goblin.goblinFormHp}
+            goblinFormHP={goblin.goblinFormHP}
             goblinFormColor={goblin.goblinFormColor}
             handleDeleteGoblin={handleDeleteGoblin}
           />)

@@ -16,12 +16,12 @@ function App() {
   const [allGoblins, setAllGoblins] = useState([
     {
       goblinFormName: 'Billy',
-      goblinFormHP: 10,
+      goblinFormHP: '10',
       goblinFormColor: 'blue'
     }
   ]);
   const [goblinFormName, setGoblinFormName] = useState('');
-  const [goblinFormColor, setGoblinFormColor] = useState('');
+  const [goblinFormColor, setGoblinFormColor] = useState('lightgreen');
   const [goblinFormHP, setGoblinFormHP] = useState('');
   
   function submitGoblin(e) {
