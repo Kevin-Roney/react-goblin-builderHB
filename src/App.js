@@ -27,7 +27,7 @@ function App() {
   const [filterQuery, setFilterQuery] = useState('');
 
   useEffect(() => handleFilterGoblins(filterQuery), 
-    [filterQuery]); //eslint-disable-line
+    [allGoblins, filterQuery]); //eslint-disable-line
   
   function submitGoblin(e) {
     e.preventDefault();
@@ -52,7 +52,7 @@ function App() {
     // use splice to delete the goblin object at this index
     allGoblins.splice(indexToRemove, 1);
     // update the allGoblins array immutably to this new, smaller array
-    setFilteredGoblins([...allGoblins]);
+    setAllGoblins([...allGoblins]);
   }
   
   function handleFilterGoblins(search) {
