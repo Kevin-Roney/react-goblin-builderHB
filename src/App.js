@@ -20,7 +20,7 @@ function App() {
       goblinFormColor: 'blue'
     }
   ]);
-  const [filteredGoblins, setFilteredGoblins] = useState(allGoblins);
+  const [filteredGoblins, setFilteredGoblins] = useState([]);
   const [goblinFormName, setGoblinFormName] = useState('');
   const [goblinFormColor, setGoblinFormColor] = useState('lightgreen');
   const [goblinFormHP, setGoblinFormHP] = useState('');
